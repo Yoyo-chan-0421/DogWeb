@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Dogs
+from .models import Dogs, Cats
 # Create your views here.
 def index(request):
 	return render(request, "dog/index.html")
@@ -11,4 +11,7 @@ def dogs(request):
 	})
 
 def cats(request):
-	return render(request, "dog/cats.html")
+	cats = Cats.objects.all()
+	return render(request, "dog/cats.html", {
+		"cats": cats
+	})

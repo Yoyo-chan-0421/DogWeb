@@ -5,11 +5,11 @@
 	<div class='dogs'>
 		{% for dog in dogs %}
 			<div>
-			<h2>{{dog.name}}</h2>
-			<img src='{{dog.image.url}}' alt='{{dog.name}}'>
-			<p>{{dog.bio}}</p>
-
+				<h2>{{dog.name}}</h2>
+				<img src='{{dog.image.url}}' alt='{{dog.name}}'>
+				<p>{{dog.bio}}</p>
 			</div>
-	</div>
 		{% endfor %}
+	</div>
+		
 {% endblock %}
