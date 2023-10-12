@@ -13,9 +13,22 @@
 		<link rel="stylesheet" href="{% static 'output.css' %}">
 	</head>
 	<body>
-		<div class="navbar bg-base-100">
-			<a class="btn btn-primary normal-case text-xl" href="{% url 'index'%}">王媽媽流浪狗園</a>
-		</div>
+		<div class="navbar bg-primary flex">
+			<div class="navbar-start">
+				<a class="btn hover:bg-base-100 btn-primary btn-lg normal-case text-xl" href="{% url 'index'%}">王媽媽流浪狗園</a>
+				
+				<ul class="menu menu-horizontal px-1">
+					<li><a class="btn hover:bg-base-100 btn-primary btn-md normal-case text-lg" href="{% url 'dogs' %}">Dogs</a></li>
+					<li><a class="btn hover:bg-base-100 btn-primary btn-md normal-case text-lg" href="{% url 'cats' %}">Cats</a></li>
+					<li><a class="btn hover:bg-base-100 btn-primary btn-md normal-case text-lg" href="{% url 'dogs' %}">關於我們</a></li>
+					<li><a class="btn hover:bg-base-100 btn-primary btn-md normal-case text-lg" href="{% url 'cats' %}">聯絡</a></li>
+				</ul>
+
+			</div>
+			<div class="navbar-end">
+				<a class="btn px-5 py-2">捐款</a>
+			</div>
+			</div>
 	{% block body %}
 	{% endblock %}
 	</body>
