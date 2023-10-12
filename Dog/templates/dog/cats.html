@@ -2,5 +2,15 @@
 
 {% block body %}
 	<h1>Cats</h1>
-	'Hello'	
+	<div>
+		{% for cat in cats%}
+		<div>
+			<h2>{{cat.name}}</h2>
+			<img src="{{cat.image.url}}", alt="{{cat.name}}">
+			<p>{{cat.bio}}</p>
+		</div>
+		{% endfor %}
+	</div>
+	
+
 {% endblock %}

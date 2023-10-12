@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang='zh'>
 	<head>
@@ -9,8 +10,12 @@
 			}
 
 		</style>
+		<link rel="stylesheet" href="{% static 'output.css' %}">
 	</head>
 	<body>
+		<div class="navbar bg-base-100">
+			<a class="btn btn-primary normal-case text-xl" href="{% url 'index'%}">王媽媽流浪狗園</a>
+		</div>
 	{% block body %}
 	{% endblock %}
 	</body>
