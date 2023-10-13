@@ -1,16 +1,25 @@
 {% extends "dog/layout.html" %}
 
+
 {% block body %}
-	<h1>Cats</h1>
-	<div>
-		{% for cat in cats%}
-		<div>
-			<h2>{{cat.name}}</h2>
-			<img src="{{cat.image.url}}", alt="{{cat.name}}">
-			<p>{{cat.bio}}</p>
+	<div class="container mx-auto">
+		<div class="flex flex-col-reverse justify-between gap-2 xl:flex-row">
+			{% for cat in cats %}
+				<div class="card w-96 bg-base-100 card-bordered p-8">
+					<figure><img src='{{cat.image.url}}' alt='{{cat.name}}' class="w-full h-auto"></figure>
+					<div class="card-body">
+						<h2 class="card-title">{{cat.name}}</h2>
+						<p>{{cat.bio}}</p>
+						<div class="card-actions justify-end">
+							<button class="btn bg-primary">多認識它</button>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
 		</div>
-		{% endfor %}
 	</div>
 	
+	  
 
+		
 {% endblock %}

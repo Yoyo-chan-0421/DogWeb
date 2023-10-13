@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from .models import Dogs, Cats
+from PIL import Image
+
 # Create your views here.
 def index(request):
+	
 	return render(request, "dog/index.html")
 
 def dogs(request):
@@ -15,3 +18,4 @@ def cats(request):
 	return render(request, "dog/cats.html", {
 		"cats": cats
 	})
+
