@@ -1,14 +1,43 @@
 {% extends "dog/layout.html" %}
 
 {% block body %}
+<div class="container mx-auto">
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-between">
+	  {% for dog in dogs %}
+		<div class="card group card-compact bg-base-100 card-bordered p-4 hover:shadow-2xl">
+		  <figure><img src="{{dog.image.url}}" alt="{{dog.name}}" class=" coolimages w-full h-auto object-cover object-center rounded-lg dark: hover:shadow-lg"></figure>
+		  <div class="card-body">
+			<h2 class="card-title group-hover:text-primary">{{dog.name}}</h2>
+			<div class="card-actions justify-end">
+			  <div tabindex="0" class="collapse border  border-base-300 bg-primary hover:text-base-100 pl-14">
+				<div class="collapse-title text-xl  font-medium group-hover:text-base-100">
+				  認識它
+				</div>
+				<div class="collapse-content">
+				  <p class="text-base-100">{{dog.bio}}</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  {% endfor %}
+	</div>
+  </div>
+
+	  
+
+		
+{% endblock %}
+
+
+<!--
 	<div class="container mx-auto">
-		<div class="flex flex-col-reverse justify-between gap-2 xl:flex-row">
+		<div class="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-1 justify-between gap-4 ">
 			{% for dog in dogs %}
-				<div class="card group w-30 h-30 card-bordered p-8 hover:shadow-2xl rounded-lg">
+				<div class="card group card-compact w-96 bg-base-100 card-bordered p-4 hover:shadow-2xl">
 					<figure><img src='{{dog.image.url}}' alt='{{dog.name}}' class="w-full h-auto object-cover object-center hover:shadow-xl"></figure>
 					<div class="card-body">
 						<h2 class="card-title group-hover:text-primary">{{dog.name}}</h2>
-						
 						<div class="card-actions justify-end">
 							<div tabindex="0" class="collapse border border-base-300 bg-primary hover:text-base-100 "> 
 								<div class="collapse-title text-xl font-medium group-hover:text-base-100">
@@ -20,13 +49,12 @@
 							  </div>
 						</div>
 					</div>
-					
 				</div>
 			{% endfor %}
 		</div>
 	</div>
 	
-	  
+-->
 
-		
-{% endblock %}
+
+<!----->
