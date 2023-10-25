@@ -19,3 +19,6 @@ def cats(request):
 		"cats": cats
 	})
 
+def about(request):
+	return render(request, "dog/about.html")
+

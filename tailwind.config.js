@@ -9,15 +9,17 @@ module.exports = {
       {
         mytheme: {
         
-            "primary": "#DC7E19",   //#FF6B6B
-            "secondary": "#4CAF50",
+            "primary": "#F3B44B",   //#FF6B6B #3372a8  #DC7E19  #FFFAEB 
+            "secondary": "#FFF5D6",
+            "background": "#FFFAEB",
             "accent": "#007ACC",
-            "neutral": "#1f2428",
+            "neutral": "#FFFAEB",
             "base-100": "#F5F5F5",  //
             "info": "#4f88e3",
             "success": "#33e6b3",     
             "warning": "#f6db6f",    
             "error": "#f93e6a",
+            "see": "rgba(0, 0, 0, 0.5)",
                      
         },
       },

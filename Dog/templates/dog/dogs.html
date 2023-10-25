@@ -1,16 +1,16 @@
 {% extends "dog/layout.html" %}
 
 {% block body %}
-<div class="container mx-auto">
+<div class="container mx-auto bg-background">
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-between">
 	  {% for dog in dogs %}
-		<div class="card group card-compact bg-base-100 card-bordered p-4 hover:shadow-2xl">
+		<div class="card group card-compact bg-neutral card-bordered p-4 hover:shadow-2xl">
 		  <figure><img src="{{dog.image.url}}" alt="{{dog.name}}" class=" coolimages w-full h-auto object-cover object-center rounded-lg dark: hover:shadow-lg"></figure>
 		  <div class="card-body">
 			<h2 class="card-title group-hover:text-primary">{{dog.name}}</h2>
 			<div class="card-actions justify-end">
-			  <div tabindex="0" class="collapse border  border-base-300 bg-primary hover:text-base-100 pl-14">
-				<div class="collapse-title text-xl  font-medium group-hover:text-base-100">
+			  <div tabindex="0" class="collapse border  border-base-300 bg-primary hover:text-base-100 place-self-auto "> <!--pl-14 md:pl-10 sm:pl-16-->
+				<div class="collapse-title text-xl font-medium group-hover:text-base-100">
 				  認識它
 				</div>
 				<div class="collapse-content">
