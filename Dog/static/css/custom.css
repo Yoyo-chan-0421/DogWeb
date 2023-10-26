@@ -100,3 +100,19 @@ img {
   .effect-section:hover .gradient-overlay {
     opacity: 0;
   }
+
+
+
+  .box-shadow-hover {
+    background: #FFF5D6;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+  }
+  
+  .box-shadow-hover:hover {
+    box-shadow: 0 0 10px #FFF5D6, 0 0 20px #FFF5D6;
+  }

@@ -1,51 +1,38 @@
 {% extends "dog/layout.html" %}
 {% load static %}
 {% block body %}
-<!--
 
-  <div class="hero min-h-screen" style="background-image: url()">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">哈嘍</h1>
-                <p class="mb-5">This is some placeholder text for your hero section. You can replace it with your own content.</p>
-                <a href="{% url 'dogs' %}" class="btn-primary p-4 rounded">認識狗狗</a>
-                <a href="{% url 'cats' %}" class="btn-primary p-4 rounded">認識貓咪</a>
-            </div>
-        </div>
--->
-    
 <div class="hero min-h-screen bg-primary py-20">
   <div class="hero-content flex-col lg:flex-row-reverse  overflow-hidden ">
-    <div class="h-32 carousel carousel-vertical rounded-box">
+    <div class="h-96 carousel carousel-vertical rounded-box m-20">
       <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="max-w-md lg:max-w-full rounded-lg shadow-2xl mask mask-squircle" />
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-squircle" />
       </div> 
       <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="max-w-md lg:max-w-full rounded-lg shadow-2xl mask mask-diamond" />
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-diamond" />
       </div> 
       <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="max-w-md lg:max-w-full rounded-lg shadow-2xl mask mask-decagon" />
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-decagon" />
       </div> 
       <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="max-w-md lg:max-w-full rounded-lg shadow-2xl mask mask-half-1" />
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-half-1" />
       </div> 
       <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="max-w-md lg:max-w-full rounded-lg shadow-2xl mask mask-star" />
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-star" />
       </div> 
       <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="max-w-md lg:max-w-full rounded-lg shadow-2xl mask mask-star2" />
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-star2" />
       </div> 
       <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="max-w-md lg:max-w-full rounded-lg shadow-2xl mask mask-pentagon" />
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-pentagon" />
       </div>
     </div>
-    <div class="lg:w-2/3 text-center items-center"> <!-- Adjust the width and center-align the content -->
-      <h1 class="text-3xl lg:text-5xl font-bold">哈嘍</h1> <!-- Adjust the title size -->
-      <p class="py-2 lg:py-6 text-sm lg:text-base"> <!-- Adjust the text size -->
-        歡迎來到我們的家！
+    <div class="lg:w-2/3 text-center items-center"> 
+      <h1 class="text-3xl lg:text-5xl font-bold">歡迎來到我們的家！</h1> <!-- Adjust the title size -->
+      <p class="py-2 lg:py-6 text-lg lg:text-lg"> 
+        在台北石牌有一個收留上百隻浪浪貓狗的家，16年來王媽媽獨自照顧毛孩們，這裡是志工群協助王媽媽創立的小天地🧡
       </p>
-      <a id="scrollButton" class="btn btn-primary" href="#dogcat">認識我們</a>
+      <a id="scrollButton" class="navlinks hover:border-primary border-white border-4 shadow-md btn btn-primary btn-lg" href="#dogcat">認識我們</a>
     </div>
   </div>
 </div>
