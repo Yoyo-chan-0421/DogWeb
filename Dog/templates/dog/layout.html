@@ -3,6 +3,7 @@
 <html lang='zh-TW'>
 	<head>
 		<title>王媽媽流浪狗園</title>	
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -42,11 +43,10 @@
 				</ul>
 			</div>
 			<div class="navbar-end">
-				<a href="#" class="box-shadow-hover btn btn-wide btn-lg px-5 py-2 btn-secondary hidden sm:block">請支持我們的生活費！</a>
-
+				<a href="{% url 'donation' %}" class="box-shadow-hover btn btn-secondary hidden sm:flex sm:items-center sm:justify-center sm:btn-lg sm:btn-wide ">請支持我們的生活費</a>
 			</div>
 		  </div>
-		  <a href="#" class=" btn fixed z-50 bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full block sm:hidden">Donate</a>
+		  <a href="{% url 'donation' %}" class=" box-shadow-hover btn btn-wide btn-lg btn-secondary fixed z-50 m-auto inset-x-0 bottom-0 right-4  bg-red-500 text-white rounded-full flex items-center sm:hidden ">請支持我們的生活費!</a>
 		{% block body%}
 		{% endblock%}
 	</body>

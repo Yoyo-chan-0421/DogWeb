@@ -22,3 +22,9 @@ def cats(request):
 def about(request):
 	return render(request, "dog/about.html")
 
+def address(request):
+	return render(request, "dog/address.html")
+
+def donation(request):
+	return render(request, "dog/donation.html")
+

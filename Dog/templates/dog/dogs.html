@@ -5,7 +5,13 @@
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-between">
 	  {% for dog in dogs %}
 		<div class="card group card-compact bg-neutral card-bordered p-4 hover:shadow-2xl">
-		  <figure><img src="{{dog.image.url}}" alt="{{dog.name}}" class=" coolimages w-full h-auto object-cover object-center rounded-lg dark: hover:shadow-lg"></figure>
+			<div class="indicator">
+				<span class="indicator-item indicator-start sm:indicator-middle md:indicator-bottom lg:indicator-center xl:indicator-end badge badge-secondary"></span> 
+				<div class="grid w-32 h-32 bg-base-300 place-items-center">
+					<figure><img src="{{dog.image.url}}" alt="{{dog.name}}" class=" coolimages w-full h-auto object-cover object-center rounded-lg dark: hover:shadow-lg"></figure>
+				</div>
+			  </div>
+		  
 		  <div class="card-body">
 			<h2 class="card-title group-hover:text-primary">{{dog.name}}</h2>
 			<div class="card-actions justify-end">

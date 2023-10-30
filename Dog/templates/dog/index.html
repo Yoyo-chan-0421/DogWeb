@@ -2,13 +2,12 @@
 {% load static %}
 {% block body %}
 
-<div class="hero min-h-screen bg-primary py-20">
+<div class="hero h-screen bg-primary py-20">
   <div class="hero-content flex-col lg:flex-row-reverse  overflow-hidden ">
-    <div class="h-96 carousel carousel-vertical rounded-box m-20">
-      <div class="carousel-item h-full">
-        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-squircle" />
+      <div class="h-full w-full lg:w-1/2 m-2 lg:m-20">
+        <img src="{% static 'photos/catcover1.png' %}" class="w-full lg:max-w-full rounded-lg shadow-2xl mask mask-heart" />
       </div> 
-    </div>
+    
     <div class="lg:w-2/3 text-center items-center"> 
       <h1 class="text-3xl lg:text-5xl font-bold">歡迎來到我們的家！</h1> <!-- Adjust the title size -->
       <p class="py-2 lg:py-6 text-lg lg:text-lg"> 

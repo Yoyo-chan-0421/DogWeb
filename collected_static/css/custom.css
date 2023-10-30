@@ -1,3 +1,6 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap");
+
 html{
     scroll-behavior: smooth;
 }
@@ -7,6 +10,10 @@ body{
 a {
     scroll-behavior: smooth;
   }
+img {
+    display: block;
+    max-width: 100%;
+}
 .navlinks{
     background-image: linear-gradient(
         to right,
@@ -53,4 +60,60 @@ a {
 #scrollButton {
     cursor: pointer;
 }
+
+
+
+
+
+/* Custom CSS for the square effect */
+.custom-square {
+    width: 100%; /* 1/3 of the parent width */
+    height: 100%;
+    float: left;
+    filter: grayscale(50%);
+    transition: transform 0.5s;
+  }
+  .custom-square:hover{
+    cursor: pointer;
+  }
   
+  /* Custom CSS for the gradient overlay */
+  .gradient-overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  /* Custom CSS for scaling and grayscale on hover */
+  .effect-section:hover {
+    transform: scale(1.05);
+  }
+  
+  .effect-section:not(:hover) {
+    transform: scale(1);
+  }
+  
+  .effect-section:hover .gradient-overlay {
+    opacity: 0;
+  }
+
+
+
+  .box-shadow-hover {
+    background: #FFF5D6;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+  }
+  
+  .box-shadow-hover:hover {
+    box-shadow: 0 0 10px #FFF5D6, 0 0 20px #FFF5D6;
+    cursor: pointer;
+  }
