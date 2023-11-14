@@ -7,5 +7,5 @@ urlpatterns = [
 	path("貓貓班", views.cats, name="cats"),
     path("關於我們", views.about, name="about"),
     path("支持我們的生活費", views.donation, name="donation"),
-    path("地址", views.address, name="address")
+    path("地址", views.volunteer, name="volunteer")
 ]

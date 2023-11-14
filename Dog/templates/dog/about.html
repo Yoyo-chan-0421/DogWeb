@@ -1,1 +1,41 @@
 {% extends "dog/layout.html" %}
+{% load static %}
+{% block body %}
+
+
+
+<h1 class=" text-2xl text-primary text-center mt-10">聯絡我們🐶</h1>
+
+<br>
+
+<div class="flex ">
+    <div class="card w-96 bg-base-100 shadow-xl rounded-lg m-5">
+        <a href="https://www.facebook.com/auntiewanglovedog">
+        <figure><img src="{% static 'photos/facebooklogo.png' %}" alt="Shoes" class="w-full"/></figure>
+        <div class="card-body">
+          <h2 class="card-title items-center">Facebook</h2>
+        </div>
+        </a>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-xl rounded-lg m-5">
+        <a href="https://www.instagram.com/wangmalovehome/">
+        <figure><img src="{% static 'photos/instagramlogo.png' %}" alt="Shoes" class="w-full"/></figure>
+        <div class="card-body">
+          <h2 class="card-title items-center">Instagram</h2>
+        </div>
+        </a>
+    </div>
+
+
+</div>
+    
+
+
+
+
+
+
+
+
+{% endblock %}

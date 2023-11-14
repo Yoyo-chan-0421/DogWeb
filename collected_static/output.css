@@ -2542,6 +2542,10 @@ details.collapse summary::-webkit-details-marker {
   margin: 0.5rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2892,6 +2896,33 @@ details.collapse summary::-webkit-details-marker {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 640px) {
+  .sm\:btn-lg {
+    height: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    min-height: 4rem;
+    font-size: 1.125rem;
+  }
+
+  .sm\:btn-wide {
+    width: 16rem;
+  }
+
+  .btn-square:where(.sm\:btn-lg) {
+    height: 4rem;
+    width: 4rem;
+    padding: 0px;
+  }
+
+  .btn-circle:where(.sm\:btn-lg) {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    padding: 0px;
+  }
+}
+
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: hsl(var(--p) / var(--tw-border-opacity));
@@ -2941,8 +2972,8 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 640px) {
-  .sm\:block {
-    display: block;
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:hidden {
@@ -2955,6 +2986,14 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
   }
 }
 
