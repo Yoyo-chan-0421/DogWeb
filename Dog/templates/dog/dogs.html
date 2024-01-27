@@ -1,6 +1,15 @@
 {% extends "dog/layout.html" %}
 
 {% block body %}
+{% load static %}
+<div class='banner h-screen flex items-center justify-center'>
+<img src="{% static 'photos/dogbanner.jpg' %}" alt=" Dog Banner Image" class="object-cover w-full h-full">
+
+
+</div>
+
+
+
 <div class="container mx-auto bg-background">
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-between">
 	  {% for dog in dogs %}
