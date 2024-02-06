@@ -2,11 +2,7 @@
 
 {% block body %}
 {% load static %}
-<div class='banner h-screen flex items-center justify-center'>
-<img src="{% static 'photos/dogbanner.jpg' %}" alt=" Dog Banner Image" class="object-cover w-full h-full">
 
-
-</div>
 
 
 
@@ -17,16 +13,11 @@
 		  <figure><img src="{{dog.image.url}}" alt="{{dog.name}}" class=" coolimages w-full h-auto object-cover object-center rounded-lg dark: hover:shadow-lg"></figure>
 		  <div class="card-body">
 			<h2 class="card-title group-hover:text-primary">{{dog.name}}</h2>
-			<div class="card-actions justify-end">
-			  <div tabindex="0" class="collapse border  border-base-300 bg-primary hover:text-base-100 place-self-auto "> <!--pl-14 md:pl-10 sm:pl-16-->
-				<div class="collapse-title text-xl font-medium group-hover:text-base-100">
-				  認識它
-				</div>
-				<div class="collapse-content">
-				  <p class="text-base-100">{{dog.bio}}</p>
-				</div>
-			  </div>
-			</div>
+<div class="card-actions justify-end">
+    <a href="{% url 'dog_info' dog_id=dog.id %}" id="scrollButton" class="navlinks hover:border-primary border-white border-4 shadow-md btn btn-primary btn-lg">
+       認識它
+    </a>
+</div>
 		  </div>
 		</div>
 	  {% endfor %}

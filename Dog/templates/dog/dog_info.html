@@ -1,0 +1,18 @@
+<!-- dog_info.html -->
+
+{% extends 'dog/layout.html' %}
+
+{% block body %}
+
+<div class="container mx-auto flex flex-col lg:flex-row justify-center items-center mt-8">
+        <div class="lg:w-1/2 mb-4 lg:mb-0 lg:mr-8 rounded-box mr-8">
+        <img src="{{ dog.image.url }}" alt="{{ dog.name }}">
+    </div>
+    <div class="lg:w-1/2">
+
+	<h1 class="text-3xl font-bold mb-4">{{ dog.name }}</h1>
+    <p class="text-gray-700">{{ dog.bio }}</p>
+    </div>
+</div>
+
+{% endblock %}
